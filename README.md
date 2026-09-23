@@ -1,7 +1,7 @@
 # Audio model artifacts
 
-Versioned release assets with integrity metadata and the notices needed for their upstream licenses.
+Versioned release assets with source provenance and the notices needed for their upstream licenses.
 
-Each release contains the files listed in [`MODEL_MANIFEST.json`](MODEL_MANIFEST.json). The manifest records the upstream repository and revision, byte size, and SHA-256 for every asset. The terms for each artifact are the terms identified in the manifest and [`NOTICE.md`](NOTICE.md).
+The earlier Thai, Supertonic, and MOSS releases are listed in [`MODEL_MANIFEST.json`](MODEL_MANIFEST.json), which retains their existing integrity metadata. The Kokoro language-expansion release is documented separately in [`KOKORO-EXPANSION-ASSETS.md`](KOKORO-EXPANSION-ASSETS.md); that record intentionally lists sources, pinned revisions, package files, and license conditions without expected byte sizes or checksums. License notices are in [`NOTICE.md`](NOTICE.md) and [`LICENSES/`](LICENSES/).
 
 The release assets are provided without any endorsement of a particular product or service.
