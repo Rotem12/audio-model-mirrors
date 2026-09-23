@@ -22,6 +22,6 @@ Additional source notices recorded by the upstream cards:
 - German Martin's card requests credit to the original authors and source model.
 - The Marathi base-model card identifies Rasa and IndicVoices-R under CC BY 4.0 and SPRINGLab/IndicTTS-Marathi under an IITM EULA. The datasets are not included here; refer to the linked upstream card for full citations and conditions.
 - The Swedish card says its reference voice derives from a public-domain LibriVox recording.
-- The Vietnamese SEA-G2P dictionary is from the pinned Apache-2.0 source listed in the expansion asset record. Its native Windows DLL is not part of this release.
+- The Vietnamese SEA-G2P dictionary and native Windows DLL are from the pinned Apache-2.0 source listed in the expansion asset record. The DLL uses a modified no-Python SEA-G2P build and an MIT C ABI wrapper; the patch and bundled Rust dependency licenses/notices are attached. See [`LICENSES/SEA-G2P-THIRD-PARTY-NOTICES.md`](LICENSES/SEA-G2P-THIRD-PARTY-NOTICES.md).
 
 The Turkish export/voice artifacts and Russian model/eSpeak assets are not mirrored while their specific redistribution terms remain unresolved. See the asset record for the source evidence and current exclusions.

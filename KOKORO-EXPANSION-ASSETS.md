@@ -40,8 +40,8 @@ These files are re-hosted for the external KokoroSharp expansion work. They are 
 
 - Model source: [contextboxai/Kokoro-Vietnamese at `9f210d622209fcc216fe2ac6159fed2ff381cb8a`](https://huggingface.co/contextboxai/Kokoro-Vietnamese/tree/9f210d622209fcc216fe2ac6159fed2ff381cb8a); upstream card declares Apache-2.0.
 - Dictionary source: [pnnbao97/sea-g2p at `ee2e80b0ac47f1d9403f5c5fd88ecd6265e4e6b1`](https://github.com/pnnbao97/sea-g2p/tree/ee2e80b0ac47f1d9403f5c5fd88ecd6265e4e6b1); the pinned source is Apache-2.0.
-- Release files: `kokoro-vietnamese-contextbox--kokoro_vi.onnx`, `kokoro-vietnamese-contextbox--config.json`, `kokoro-vietnamese-contextbox--kokoro_vi_voicepack.pt`, `kokoro-vietnamese-contextbox--sea_g2p.bin`.
-- The locally built Windows native SEA-G2P DLL is not included in this release while its bundled Rust dependency notices are being completed. The expansion manifest therefore does not point that DLL at this release.
+- The Windows x64 native DLL is built from the pinned SEA-G2P source using the external fork's C ABI wrapper. The build patch and full Rust dependency license/copyright bundle accompany the DLL; see [`LICENSES/SEA-G2P-THIRD-PARTY-NOTICES.md`](LICENSES/SEA-G2P-THIRD-PARTY-NOTICES.md).
+- Release files: `kokoro-vietnamese-contextbox--kokoro_vi.onnx`, `kokoro-vietnamese-contextbox--config.json`, `kokoro-vietnamese-contextbox--kokoro_vi_voicepack.pt`, `kokoro-vietnamese-contextbox--sea_g2p.bin`, `kokoro-vietnamese-contextbox--sea_g2p_native.dll`, `sea-g2p-rs-no-python.patch`, `SEA-G2P-third-party-licenses.zip`, and `KokoroSharp-MIT.txt`.
 
 ## Not mirrored in this release
 
