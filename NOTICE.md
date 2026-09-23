@@ -16,6 +16,10 @@ The ONNX serving files are from `kunato/wayu-kokoro-thai-v1` at revision `abf63d
 
 The expansion assets and their pinned upstream sources are listed in [`KOKORO-EXPANSION-ASSETS.md`](KOKORO-EXPANSION-ASSETS.md). The included Arabic Nabra, German Crane, German Martin, Marathi, Swedish, and Vietnamese model artifacts are identified by their upstream cards as Apache-2.0. A copy of Apache-2.0 is provided in [`LICENSES/Apache-2.0.txt`](LICENSES/Apache-2.0.txt) and as a release asset.
 
+The Russian `zaakirio/kokoro-ru` model/voice derivatives are distributed under the OpenRAIL terms stated by the model card and the linked Dialogs corpus license. The corpus license expressly covers derived models; recipients must receive and comply with its use restrictions. A copy is attached as [`LICENSES/Dialogs-OpenRAIL-LICENSE.md`](LICENSES/Dialogs-OpenRAIL-LICENSE.md). The Kokoro base model and the RUAccent frontend assets retain their respective Apache-2.0 notices.
+
+The six minimal eSpeak NG data files used by the Russian frontend are a separate GPL-3.0-or-later component, not a license for the Kokoro model or the other release assets. They are distributed with the upstream eSpeak NG `COPYING` text at [`LICENSES/eSpeak-NG-COPYING.txt`](LICENSES/eSpeak-NG-COPYING.txt); no eSpeak executable is included.
+
 Additional source notices recorded by the upstream cards:
 
 - German Crane uses the Kerstin 1.0 reference dataset, identified as CC0-1.0.
@@ -24,4 +28,4 @@ Additional source notices recorded by the upstream cards:
 - The Swedish card says its reference voice derives from a public-domain LibriVox recording.
 - The Vietnamese SEA-G2P dictionary and native Windows DLL are from the pinned Apache-2.0 source listed in the expansion asset record. The DLL uses a modified no-Python SEA-G2P build and an MIT C ABI wrapper; the patch and bundled Rust dependency licenses/notices are attached. See [`LICENSES/SEA-G2P-THIRD-PARTY-NOTICES.md`](LICENSES/SEA-G2P-THIRD-PARTY-NOTICES.md).
 
-The Turkish export/voice artifacts and Russian model/eSpeak assets are not mirrored while their specific redistribution terms remain unresolved. See the asset record for the source evidence and current exclusions.
+The Turkish Nisan model/voice artifacts are not mirrored while the underlying voice-recording provenance remains unresolved. See the asset record for the source evidence and current exclusion.

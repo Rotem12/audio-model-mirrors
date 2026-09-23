@@ -43,9 +43,20 @@ These files are re-hosted for the external KokoroSharp expansion work. They are 
 - The Windows x64 native DLL is built from the pinned SEA-G2P source using the external fork's C ABI wrapper. The build patch and full Rust dependency license/copyright bundle accompany the DLL; see [`LICENSES/SEA-G2P-THIRD-PARTY-NOTICES.md`](LICENSES/SEA-G2P-THIRD-PARTY-NOTICES.md).
 - Release files: `kokoro-vietnamese-contextbox--kokoro_vi.onnx`, `kokoro-vietnamese-contextbox--config.json`, `kokoro-vietnamese-contextbox--kokoro_vi_voicepack.pt`, `kokoro-vietnamese-contextbox--sea_g2p.bin`, `kokoro-vietnamese-contextbox--sea_g2p_native.dll`, `sea-g2p-rs-no-python.patch`, `SEA-G2P-third-party-licenses.zip`, and `KokoroSharp-MIT.txt`.
 
+### Russian — zaakirio (Sveta, Masha, and Dima)
+
+- Model source: [zaakirio/kokoro-ru at `d649c57b239b18c4c384378127cbf01dba039bc1`](https://huggingface.co/zaakirio/kokoro-ru/tree/d649c57b239b18c4c384378127cbf01dba039bc1). The upstream card identifies the weights as OpenRAIL and says the three voice actors consented to the Dialogs corpus release.
+- Derivative-model license: [Dialogs OpenRAIL license at `e25ba617b2b56bd1dbf255d3905c51bd8da3d31f`](https://huggingface.co/datasets/langswap/dialogs-ru-emotional-conversations/blob/e25ba617b2b56bd1dbf255d3905c51bd8da3d31f/LICENSE.md). It expressly covers models trained on or derived from the corpus, permits redistribution including commercial use, and requires passing through its use restrictions. The exact license is attached as `Dialogs-OpenRAIL-LICENSE.md`.
+- Base checkpoint: `hexgrad/Kokoro-82M`, Apache-2.0. RUAccent frontend assets are from [`ruaccent/accentuator` at `d7dee9e0261be2e2588830c8dd3810a9442db01c`](https://huggingface.co/ruaccent/accentuator/tree/d7dee9e0261be2e2588830c8dd3810a9442db01c), Apache-2.0.
+- The six minimal eSpeak NG data files used by the Russian frontend are from the pinned Kokoro-Ru repository snapshot. They remain separately identified as GPL-3.0-or-later data; the upstream eSpeak NG `COPYING` text and source link are included. No eSpeak executable is mirrored here.
+- Release files:
+  - Model/config/voices: `kokoro-russian-zaakirio-base--onnx-model.onnx`, `kokoro-russian-zaakirio-dima--model-dima.onnx`, `kokoro-russian-zaakirio--config.json`, and `kokoro-russian-zaakirio--voices-{sveta,masha,dima}.bin`.
+  - RUAccent: `kokoro-russian-ruaccent--dictionary-{accents,omographs,yo_homographs,yo_words}.json.gz`; `kokoro-russian-ruaccent--nn-accent-{config.json,model.onnx,vocab.txt}`; `kokoro-russian-ruaccent--nn-stress-{config.json,model.onnx,tokenizer.json}`; `kokoro-russian-ruaccent--nn-yo-{config.json,model.onnx,tokenizer.json}`; and `kokoro-russian-ruaccent--nn-omograph-{model.onnx,tokenizer.json}`.
+  - eSpeak NG: `kokoro-russian-espeak--{phondata,phonindex,phontab,intonations,ru_dict}` and `kokoro-russian-espeak--lang-zle-ru`.
+  - Notices: `Dialogs-OpenRAIL-LICENSE.md` and `eSpeak-NG-COPYING.txt`; the release's `NOTICE.md`, `KOKORO-EXPANSION-ASSETS.md`, and existing `Apache-2.0.txt` carry the remaining component notices.
+
 ## Not mirrored in this release
 
-- **Turkish — Nisan:** the pinned ONNX repository card describes CC BY-SA 3.0 training data but does not clearly state the separate license for the exported model and voice artifact. The model/voice files are withheld until those artifact rights are clear.
-- **Russian — zaakirio:** the pinned card identifies a generic OpenRAIL family but supplies no exact license text; its package also includes eSpeak data identified as GPL-3.0-or-later. The Russian model and eSpeak files are withheld pending resolution of both terms.
+- **Turkish — Nisan:** the [source dataset](https://huggingface.co/datasets/omersaidd/tts_nisan_kumru_tur) carries MIT metadata, but its [open licensing discussion](https://huggingface.co/datasets/omersaidd/tts_nisan_kumru_tur/discussions/3) records the uploader saying it was assembled from videos found online, without resolving source permissions. The ONNX and voicepack encode that voice, so neither is mirrored until underlying recording/voice rights are clearer. The model's Apache-2.0/CC BY-SA 3.0 source terms allow broad use; this hold is about source provenance, not commercial-use or the mirror's business model.
 
 This is a provenance record, not legal advice or a warranty that upstream rights are complete. Please review the linked pinned cards and license terms before use.
